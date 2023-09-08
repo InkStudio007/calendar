@@ -26,7 +26,7 @@ def main_calendar(request, year, month):
 
 def current_calendar(request):
     now = datetime.now()
-    current_date = now.strftime("%Y-%b-%d %a")
+    current_date = now.strftime("%Y-%b-%d %A")
 
     current_cal = HTMLCalendar().formatmonth(now.year, now.month)
 
