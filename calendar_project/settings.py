@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'calendar_app.apps.DateAppConfig'
+    'calendar_app.apps.DateAppConfig',
+    'date_division_app.apps.DateDivisionAppConfig',
 ]
 
 MIDDLEWARE = [
