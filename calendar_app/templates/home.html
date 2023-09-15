@@ -11,7 +11,8 @@
     <h1>today is {{ current_date }}</h1>
     <hr>
 
-    <input id="year" type="submit" value="next month">
+    <a href="{% url 'date_difference' %}">date difference</a>
+    <a href="{% url 'age_calculator' %}">age calculator</a>
     <center>
       {{ current_cal|safe }}
     </center>
