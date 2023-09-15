@@ -1,12 +1,7 @@
-import tkinter
-
 from django.shortcuts import render
 import calendar
 from calendar import HTMLCalendar
 from datetime import datetime
-from time import *
-from tkinter import *
-import json
 
 
 def main_calendar(request, year, month):

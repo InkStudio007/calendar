@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>age calculator</title>
 </head>
 <body>
-<form class="col-sm-4 m-4" method="post">
+<h1>age calculator</h1>
+<form method="post">
     {% csrf_token %}
     {{form}}
-    Total Days:
-     <input type="submit" class="form-control" value="{{total}}">
-
+    age:
+     <input type="submit" class="form-control" value="years:{{year}} months:{{month}} days:{{day}}">
     <input type="submit" class="btn btn-success" value="submit">
 </form>
 </body>

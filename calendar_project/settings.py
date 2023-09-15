@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'calendar_app.apps.DateAppConfig',
     'date_division_app.apps.DateDivisionAppConfig',
+    'age_calculator_app.apps.AgeCalculatorAppConfig',
 ]
 
 MIDDLEWARE = [
