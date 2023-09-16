@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('date_division_app', '0001_initial'),
+        ('date_difference_app', '0001_initial'),
     ]
 
     operations = [

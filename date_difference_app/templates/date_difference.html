@@ -9,7 +9,8 @@
     {% csrf_token %}
     {{form}}
     Total Days:
-     <input type="submit" class="form-control" value="{{total}}">
+     <input type="submit" class="form-control" value="years: {{year}} months: {{month}} days:{{day}}">
+     <input type="submit" class="form-control" value="difference in days {{age_days}}">
 
     <input type="submit" class="btn btn-success" value="submit">
 </form>

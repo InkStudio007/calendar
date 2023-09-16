@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from date_division_app.views import *
+from date_difference_app.views import *
 from age_calculator_app.views import *
 
 urlpatterns = [
