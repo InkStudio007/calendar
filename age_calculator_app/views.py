@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .forms import AgeCalculatorForm
-from datetime import date, datetime
+from datetime import date
 import math
 
 # Create your views here.
@@ -25,6 +25,6 @@ def age_calculator(request):
 
         form.save()
 
-        return render(request, 'age_calculator.html', {'form': form, 'year':age_year, 'month': left_over_days_of_months, 'day': left_over_days_of_months })
+        return render(request, 'age_calculator.html', {'form': form, 'year': age_year, 'month': left_over_months, 'day': left_over_days_of_months, 'age_days': age_days})
     return render(request, 'age_calculator.html', {'form': form})
 

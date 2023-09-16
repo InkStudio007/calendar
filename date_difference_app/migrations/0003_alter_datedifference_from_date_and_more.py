@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('date_division_app', '0002_datedifference_delete_date1_delete_date2'),
+        ('date_difference_app', '0002_datedifference_delete_date1_delete_date2'),
     ]
 
     operations = [

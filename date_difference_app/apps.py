@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class DateDivisionAppConfig(AppConfig):
+class DateDifferenceAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'date_division_app'
+    name = 'date_difference_app'
