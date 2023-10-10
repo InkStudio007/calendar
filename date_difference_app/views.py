@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from .forms import DateDifferenceForm
-import math
-
+from math import floor
 
 def date_difference(request):
     form = DateDifferenceForm(request.POST)
@@ -12,11 +11,11 @@ def date_difference(request):
         total = (end_date-start_date)
 
         date_days = total.days
-        date_month = date_days.floor(date_days / 30)
-        date_year = math.floor(date_month / 12)
+        date_month = floor(date_days / 30)
+        date_year = floor(date_month / 12)
         date_year_days = date_year * 365
         left_over_days_of_years = date_days - date_year_days
-        left_over_months = math.floor(left_over_days_of_years / 30)
+        left_over_months = floor(left_over_days_of_years / 30)
         date_month_days = left_over_months * 30
         left_over_days_of_months = left_over_days_of_years - date_month_days
 

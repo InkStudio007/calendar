@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<a href="{% url 'current_calendar' %}">home page</a>
 <form class="col-sm-4 m-4" method="post">
     {% csrf_token %}
     {{form}}

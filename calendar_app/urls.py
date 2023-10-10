@@ -9,5 +9,7 @@ urlpatterns = [
     path('', views.current_calendar, name='current_calendar'),
     path('date_difference/', date_difference, name='date_difference'),
     path('age_calculator/', age_calculator, name='age_calculator'),
-    path('date_conversion/', date_conversion, name='date_conversion')
+    path('date_conversion/', date_conversion, name='date_conversion'),
+    path('date_conversion/international/', date_conversion_international, name='date_conversion_international'),
+    path('date_conversion/persian/', date_conversion_persian, name='date_conversion_persian'),
 ]
