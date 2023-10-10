@@ -36,7 +36,7 @@ class DateConversion(models.Model):
         (11, 'بهمن'),
         (12, 'اسفند')
     )
-    conversion_type = models.CharField(max_length=200, choices=type_status, null=True)
+    conversion_type = models.CharField(max_length=200, choices=type_status, default='international_to_persian', null=True)
     year = models.IntegerField(null=True)
     international_month = models.PositiveSmallIntegerField(choices=international_month_status, default=1, null=True)
     persian_month = models.PositiveSmallIntegerField(choices=persian_month_status, default=1, null=True)

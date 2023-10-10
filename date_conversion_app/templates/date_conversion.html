@@ -2,16 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>title</title>
 </head>
 <body>
-<form method="post">
-    {% csrf_token %}
-    {{form.year}}
-    {{form.persian_month}}
-    {{form.day}}
-    <label for="convert">{{persian_to_international}}</label>
-    <input id="convert" type="submit" value="submit">
-</form>
+<a href="{% url 'current_calendar' %}">home page</a>
+<a href="{% url 'date_conversion_international' %}">international to persian conversion</a>
+<a href="{% url 'date_conversion_persian' %}">persian to international conversion</a>
 </body>
 </html>

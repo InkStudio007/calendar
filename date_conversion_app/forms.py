@@ -1,10 +1,21 @@
 from django import forms
-from django_jalali import forms as jforms
 from .models import DateConversion
 
 
-class DateConversionForm(forms.ModelForm):
+class ConversionTypeForm(forms.ModelForm):
     class Meta:
         model = DateConversion
-        fields = '__all__'
+        fields = ['conversion_type']
+
+
+class DateConversionPersianForm(forms.ModelForm):
+    class Meta:
+        model = DateConversion
+        fields = ['year', 'persian_month', 'day']
+
+
+class DateConversionInternationalForm(forms.ModelForm):
+    class Meta:
+        model = DateConversion
+        fields = ['year', 'international_month', 'day']
 

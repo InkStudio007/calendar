@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="{% url 'date_conversion' %}">go back</a>
+<form method="post">
+    {% csrf_token %}
+    {{form_international}}
+     <input type="submit" class="form-control" value="{{international_to_persian}}">
+    <input type="submit" class="btn btn-success" value="submit">
+</form>
+</body>
+</html>
