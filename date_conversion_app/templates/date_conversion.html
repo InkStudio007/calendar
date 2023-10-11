@@ -1,17 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Date Conversion</title>
 </head>
 <body>
-<form method="post">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/date_conversion.css' %}">
+<form method="main">
     {% csrf_token %}
-    {{form.year}}
-    {{form.persian_month}}
-    {{form.day}}
-    <label for="convert">{{persian_to_international}}</label>
-    <input id="convert" type="submit" value="submit">
+    <b class="conversion">{{form.year}}</b>
+    <br>
+    <b class="conversion">{{form.persian_month}}</b>
+    <br>
+    <b class="conversion">{{form.day}}</b>
+    <br>
+    <input class="input" type="submit" value="submit" onclick="Convert()">
+    <p id="PtI"></p>
 </form>
+<script type="text/javascript">
+    function Convert() {
+        var p_to_i = "{{persian_to_international}}"
+        document.getElementById("PtI").innerHTML= p_to_i;
+    };
+</script>
 </body>
 </html>

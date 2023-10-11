@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'calendar_app.apps.DateAppConfig',
     'date_difference_app.apps.DateDifferenceAppConfig',
     'age_calculator_app.apps.AgeCalculatorAppConfig',
-    'django_jalali',
     'DateConvert',
     'date_conversion_app.apps.DateConversionAppConfig',
 ]
