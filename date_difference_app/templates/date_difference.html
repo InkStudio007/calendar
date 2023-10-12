@@ -1,19 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Date Difference</title>
 </head>
 <body>
-<a href="{% url 'current_calendar' %}">home page</a>
-<form class="col-sm-4 m-4" method="post">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/date_difference.css' %}">
+<form class="main" method="post">
     {% csrf_token %}
-    {{form}}
+    <b class="date">{{form}}</b>
     Total Days:
-     <input type="submit" class="form-control" value="years: {{year}} months: {{month}} days:{{day}}">
-     <input type="submit" class="form-control" value="difference in days {{date_days}}">
-
-    <input type="submit" class="btn btn-success" value="submit">
+    <br>
+     <input type="submit" class="answer" value="years: {{year}} months: {{month}} days:{{day}}">
+     <input type="submit" class="answer" value="difference in days {{date_days}}">
+    <br>
+    <input type="submit" class="input" value="submit">
 </form>
 </body>
 </html>
