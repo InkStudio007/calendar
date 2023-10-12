@@ -1,0 +1,42 @@
+body{
+    color: whitesmoke;
+    background-color: rgb(44, 44, 44);
+    font-family: sans-serif,arial;
+}
+*{
+    box-sizing: border-box;
+}
+.title{
+    text-align: center;
+    font-size: 70px;
+}
+.answer{
+    background-color: rgb(80, 80, 80);
+    border-radius: 4px;
+    border-width: 4px;
+    border-color: whitesmoke;
+    text-align: center;
+    padding: 30px;
+    margin: 15px;
+    color: whitesmoke;
+    font-size: 25px;
+}
+.input{
+    background-color: rgb(205, 205, 205);
+    border-radius: 4px;
+    border-width: 4px;
+    border-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    font-size: 15px;
+    font-family: sans-serif,arial;
+}
+.main{
+   font-size: 20px;
+   text-align: center;
+}
+.age{
+    text-align: center;
+    width: 20px;
+}

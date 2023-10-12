@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +6,16 @@
     <title>age calculator</title>
 </head>
 <body>
-<a href="{% url 'current_calendar' %}">home page</a>
-<h1>age calculator</h1>
-<form method="post">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/age_calculator.css' %}">
+<h1 class="title">age calculator</h1>
+<form class="main" method="post">
     {% csrf_token %}
-    {{form}}
-    age:
-     <input type="submit" class="form-control" value="years:{{year}} months:{{month}} days:{{day}}">
-     <input type="submit" class="form-control" value="age in days: {{age_days}}">
-    <input type="submit" class="btn btn-success" value="submit">
+    <b class="age">{{form}}</b>
+    <br>
+     <input type="submit" class="answer" value="years:{{year}} months:{{month}} days:{{day}}">
+     <input type="submit" class="answer" value="age in days: {{age_days}}">
+    <br>
+    <input type="submit" class="input" value="submit">
 </form>
 </body>
 </html>
