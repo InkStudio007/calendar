@@ -7,6 +7,9 @@
 </head>
 <body>
     <link rel="stylesheet" type="text/css" href="{% static 'css/date_difference.css' %}">
+<a class="home" href="{% url 'current_calendar' %}">home page</a>
+<hr>
+<h1 class="title">date difference</h1> 
 <form class="main" method="post">
     {% csrf_token %}
     <b class="date">{{form}}</b>

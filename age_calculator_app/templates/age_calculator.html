@@ -7,6 +7,8 @@
 </head>
 <body>
     <link rel="stylesheet" type="text/css" href="{% static 'css/age_calculator.css' %}">
+<a class="home" href="{% url 'current_calendar' %}">home page</a>
+<hr>    
 <h1 class="title">age calculator</h1>
 <form class="main" method="post">
     {% csrf_token %}

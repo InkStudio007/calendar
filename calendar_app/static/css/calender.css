@@ -9,12 +9,14 @@ body{
     text-align: center;
 }
 .clock{
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
     color: whitesmoke;
     background-color: rgb(70, 70, 70);
     text-align: center;
     align-items: center;
     border-radius: 5px;
-    font-size: 90px;
+    font-size: 100px;
     font-family: sans-serif,Arial;
 }
 ul{
@@ -25,6 +27,8 @@ li{
     list-style: none;
 }
 li a{
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
     text-align: center;
     background-color: rgb(70, 70, 70);
     border-radius: 3px;
@@ -32,31 +36,41 @@ li a{
     border-color: rgb(30, 30, 30);
     display: block;
     color: whitesmoke;
-    font-size: 25px;
+    font-size: 40px;
     text-decoration: none;
     font-family: sans-serif,Arial;
     padding: 5px;
-    
 }
 li a:hover{
     color: whitesmoke;
-    font-size: 25px;
+    font-size: 40px;
     text-decoration: underline;
 }
+.page{
+    display: flex;
+    align-items: center;
+}
+
+    /*calendar*/
+    
 .calendar-container {
+    margin-left: 200px;
+    margin-right: 10px;
+    text-align: right;
     background: #fff;
-    width: 450px;
+    width: 500px;
     border-radius: 10px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
 }
  
 .calendar-container header {
     display: flex;
     align-items: center;
-    padding: 25px 30px 10px;
+    padding: 0px 15px 15px 15px;
     justify-content: space-between;
 }
- 
 header .calendar-navigation {
     display: flex;
 }
@@ -70,7 +84,7 @@ header .calendar-navigation span {
     line-height: 38px;
     border-radius: 50%;
     user-select: none;
-    color: #aeabab;
+    color: #000000;
     font-size: 1.9rem;
 }
  
@@ -85,10 +99,11 @@ header .calendar-navigation span:hover {
 header .calendar-current-date {
     font-weight: 500;
     font-size: 1.45rem;
+    color: black;
 }
  
 .calendar-body {
-    padding: 20px;
+    padding: 0px;
 }
  
 .calendar-body ul {
@@ -96,25 +111,28 @@ header .calendar-current-date {
     flex-wrap: wrap;
     display: flex;
     text-align: center;
+    margin: 0px;
 }
  
 .calendar-body .calendar-dates {
-    margin-bottom: 20px;
+     margin-bottom: 0px;
 }
  
 .calendar-body li {
     width: calc(100% / 7);
     font-size: 1.07rem;
-    color: #414141;
+    color: black;
+    margin: 2px;
 }
  
 .calendar-body .calendar-weekdays li {
     cursor: default;
-    font-weight: 500;
+    width: 40px;
+    height: 40px;
 }
  
 .calendar-body .calendar-dates li {
-    margin-top: 30px;
+    margin: 12px;
     position: relative;
     z-index: 1;
     cursor: pointer;
@@ -146,4 +164,4 @@ header .calendar-current-date {
  
 .calendar-dates li:not(.active):hover::before {
     background: #e4e1e1;
-}
+} 

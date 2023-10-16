@@ -1,12 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>date_conversion</title>
 </head>
 <body>
-<a href="{% url 'current_calendar' %}">home page</a>
-<a href="{% url 'date_conversion_international' %}">international to persian conversion</a>
-<a href="{% url 'date_conversion_persian' %}">persian to international conversion</a>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/date_conversion.css' %}">
+<a class="home" href="{% url 'current_calendar' %}">home page</a>
+<hr>
+<h1 class="title">date conversion</h1>
+<div class="con">
+    <a href="{% url 'date_conversion_international' %}">international to persian conversion</a>
+    <a href="{% url 'date_conversion_persian' %}">persian to international conversion</a>    
+</div>
 </body>
 </html>
