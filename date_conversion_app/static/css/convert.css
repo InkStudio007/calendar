@@ -33,12 +33,7 @@ body{
     font-family: sans-serif,arial;
 }
 .main{
-   font-size: 20px;
-   text-align: center;
-}
-.date{
     text-align: center;
-    width: 20px;
 }
 .home{
     color: whitesmoke;

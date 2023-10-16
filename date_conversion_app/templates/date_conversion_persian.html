@@ -1,16 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>international_to_persian</title>
 </head>
 <body>
-<a href="{% url 'date_conversion' %}">go back</a>
-<form method="post">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/convert.css' %}">
+<a class="home" href="{% url 'date_conversion' %}">go back</a>
+<hr>
+<h1 class="title">international to persian</h1>
+<form  class="main" method="post">
     {% csrf_token %}
     {{form_persian}}
-     <input type="submit" class="form-control" value="{{persian_to_international}}">
-    <input type="submit" class="btn btn-success" value="submit">
+    <input type="submit" class="input" value="submit">
+    <input type="submit" class="answer" value="{{persian_to_international}}">
 </form>
 </body>
 </html>

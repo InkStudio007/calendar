@@ -10,33 +10,35 @@ body{
     text-align: center;
     font-size: 70px;
 }
-.answer{
-    background-color: rgb(80, 80, 80);
-    border-radius: 4px;
-    border-width: 4px;
-    border-color: whitesmoke;
+.con{
     text-align: center;
-    padding: 30px;
-    margin: 15px;
-    color: whitesmoke;
-    font-size: 30px;
+    align-items: center;
 }
-.input{
-    background-color: rgb(205, 205, 205);
-    border-radius: 4px;
-    border-width: 4px;
+.con a{
+    border-width: 5px;
     border-color: rgb(0, 0, 0);
     text-align: center;
-    padding: 15px;
+    background-color: rgb(70, 70, 70);
+    border-radius: 3px;
     margin: 10px;
-    font-size: 15px;
-    font-family: sans-serif,arial;
+    border-color: rgb(30, 30, 30);
+    display: block;
+    color: whitesmoke;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: sans-serif,Arial;
+    padding: 5px;
 }
-.main{
-   font-size: 20px;
-   text-align: center;
+.con a:hover{
+    color: whitesmoke;
+    font-size: 40px;
+    text-decoration: underline;
 }
-.conversion{
-    text-align: center;
-    width: 20px;
+.home{
+    color: whitesmoke;
+    font-size: 25px;
+}
+.home:hover{
+    color: whitesmoke;
+    text-decoration: underline;
 }
